@@ -9,6 +9,10 @@ Rails.application.routes.draw do
   get '/niniko_w', to: 'static_pages#niniko_w'
   get '/mitaliang', to: 'static_pages#mitaliang'
 
+  get '/login', to: 'sessions#new'
+  post '/login', to: 'sessions#create'
+  delete '/logout', to: 'sessions#destroy'
+
   resources :users
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
