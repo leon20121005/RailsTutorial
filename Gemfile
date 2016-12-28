@@ -5,6 +5,12 @@ source 'http://rubygems.org'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 # A state-of-the-art hash function
 gem 'bcrypt', '3.1.11'
+# Allow us to make sample users with semi-realistic names and email addresses
+gem 'faker', '1.6.6'
+# Paginate the users, so that (for example) only 30 show up on a page at any one time.
+gem 'will_paginate', '3.1.0'
+# A framework for paginating
+gem 'bootstrap-will_paginate', '0.0.10'
 # A framework from Twitter that makes it easy to add nice web design and user interface elements to an HTML5 application
 gem 'bootstrap-sass', '3.3.6'
 # Use sqlite3 as the database for Active Record
